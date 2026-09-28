@@ -1,0 +1,237 @@
+{
+  "payload": {
+    "schema": 1,
+    "kind": "MixBrain.PortablePluginProfile",
+    "sourceGeneration": "generation-test",
+    "sourceContentHash": "7237c33c1a86b8f2e66c4adc6a0bfefa6c45fbbdd95c54094b1e790fccca7c4d",
+    "canonicalKey": "p2_3649f079c4f407924c5789105d6cf74d8d0ce843bcfd998bb3141387db0ee0cb",
+    "profile": {
+      "schema": 3,
+      "plugin": {
+        "identity": {
+          "format": 1,
+          "componentId": "0123456789abcdef0123456789abcdef",
+          "vendorId": "",
+          "moduleId": "test.v2.fixture",
+          "version": "1.0",
+          "architecture": "arm64",
+          "binaryFingerprint": "6f1af2dfc4d7f16dacf404b1f6c9fd4a65cfffb8edde6dcf957463a0e41fb1ed",
+          "type": 0
+        },
+        "displayName": "test fixture, not a real certified plugin",
+        "vendorLabel": "",
+        "modulePath": "",
+        "executablePath": "",
+        "nativeLocator": "",
+        "executableSizeBytes": 0,
+        "executableMTimeMs": 0
+      },
+      "analyzers": {
+        "values": [
+          4,
+          3,
+          11,
+          10,
+          6,
+          11,
+          3
+        ]
+      },
+      "state": 3,
+      "technical": {
+        "instantiated": true,
+        "parametersEnumerated": true,
+        "parameterWrite": true,
+        "parameterReadback": true,
+        "bypass": true,
+        "stateCapture": true,
+        "stateRestore": true,
+        "recreate": true,
+        "denormalSafe": true,
+        "layouts": [
+          {
+            "inputs": 1,
+            "outputs": 1,
+            "sidechainInputs": 0,
+            "sampleRate": 48000.0,
+            "blockSize": 128,
+            "prepared": true,
+            "silenceFinite": true,
+            "signalFinite": true
+          },
+          {
+            "inputs": 2,
+            "outputs": 2,
+            "sidechainInputs": 0,
+            "sampleRate": 48000.0,
+            "blockSize": 128,
+            "prepared": true,
+            "silenceFinite": true,
+            "signalFinite": true
+          }
+        ],
+        "unsupportedTopologies": []
+      },
+      "runtime": {
+        "instantiateMilliseconds": 2.0,
+        "processMedianMicroseconds": 5.0,
+        "processP99Microseconds": 8.0,
+        "processMaxMicroseconds": 10.0,
+        "stateSnapshotMilliseconds": 0.0,
+        "tailSeconds": 0.0,
+        "latencySamples": 0,
+        "timeoutCount": 0,
+        "crashCount": 0,
+        "periodicSpikes": 0,
+        "measuredMemoryBytes": null,
+        "stable": true
+      },
+      "nativeParameters": [
+        {
+          "id": "vst3:0100",
+          "name": "Band 1 Gain",
+          "label": "dB",
+          "defaultNormalized": 0.5,
+          "steps": 0,
+          "automatable": true,
+          "boolean": false,
+          "discrete": false
+        }
+      ],
+      "baselines": [],
+      "controls": [
+        {
+          "semanticId": "eq.band.0.gain",
+          "runtimeParameterId": "vst3:0100",
+          "nativeParameterName": "Band 1 Gain",
+          "interactionGroup": "",
+          "unit": 2,
+          "confidence": 0.99,
+          "normalizedMinimum": 0.0,
+          "normalizedMaximum": 1.0,
+          "physicalMinimum": -18.0,
+          "physicalMaximum": 18.0,
+          "safeMinimum": -18.0,
+          "safeMaximum": 18.0,
+          "defaultNormalized": 0.5,
+          "steps": 0,
+          "direction": 1,
+          "readable": true,
+          "writable": true,
+          "automatable": true,
+          "parameterRoundTrip": true,
+          "audioResponseVerified": true,
+          "rangeVerified": true,
+          "evidenceVersion": 1,
+          "calibration": [
+            {
+              "normalized": 0.0,
+              "physical": -18.0
+            },
+            {
+              "normalized": 0.5,
+              "physical": 0.0
+            },
+            {
+              "normalized": 1.0,
+              "physical": 18.0
+            }
+          ],
+          "choices": []
+        }
+      ],
+      "capabilities": [
+        {
+          "capability": 1,
+          "confidence": 0.99,
+          "analyzer": 2,
+          "analyzerVersion": 11,
+          "behaviorVerified": true,
+          "requiredSemanticIds": [
+            "eq.band.0.gain"
+          ],
+          "measurements": [
+            {
+              "metric": "measured_band_gain_db",
+              "operatingPoint": "gain:+6",
+              "input": 0.0,
+              "output": 6.0,
+              "confidence": 0.99
+            }
+          ],
+          "operatingSetup": []
+        }
+      ],
+      "nonlinear": [],
+      "operatingPoints": [
+        {
+          "id": "TONE_EQ.MEDIUM",
+          "semanticParameterPlan": [
+            {
+              "semanticId": "eq.band.0.gain",
+              "unit": 2,
+              "value": 6.0,
+              "token": ""
+            }
+          ],
+          "controlStrength01": null,
+          "permissionClass": 0,
+          "driveSeverity": 0.0,
+          "harmonicDensity": 0.0,
+          "highOrderRatio": 0.0,
+          "clippingSharpness": 0.0,
+          "transientRounding": 0.0,
+          "dynamicCompression": 0.0,
+          "levelDependency": 0.0,
+          "confidence": 0.99,
+          "safe": true,
+          "runtimeVerified": true
+        }
+      ],
+      "spatial": [],
+      "analogModeling": {
+        "modelingConfidence": 0.0,
+        "analogTopology": [],
+        "modeledEQ": false,
+        "modeledDynamics": false,
+        "modeledPreamp": false,
+        "modeledConsole": false,
+        "modeledTape": false,
+        "modeledTransformer": false,
+        "modeledTube": false,
+        "nonlinearCharacter": false,
+        "levelDependency": false,
+        "transientCharacter": false,
+        "frequencyInteraction": false,
+        "dynamicInteraction": false,
+        "characterStrengthMinimum": 0.0,
+        "characterStrengthMaximum": 0.0,
+        "additiveSuitability": 0.0,
+        "correctiveSuitability": 0.0,
+        "metadataEvidence": false,
+        "measuredEvidence": false
+      },
+      "knowledge": {
+        "category": 0,
+        "verifiedSections": [],
+        "character": {
+          "harmonicDensity": 0.0,
+          "highOrderRatio": 0.0,
+          "transientRounding": 0.0,
+          "dynamicCompression": 0.0,
+          "brightnessShift": 0.0,
+          "lowFrequencyWeight": 0.0,
+          "levelDependency": 0.0,
+          "transparency": 1.0,
+          "confidence": 0.0,
+          "measured": false
+        },
+        "multiSection": false,
+        "channelStrip": false,
+        "confidence": 0.0
+      },
+      "failureReason": ""
+    }
+  },
+  "payloadSha256": "c8ac3162e55a539e87517f5a2d886336e75788330c79df32c44464b9244a8db3"
+}
